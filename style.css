@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    color: rgb(7, 76, 84);
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 3%;
+    z-index: 1;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled{
+    background-image: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 10px;
+}
+
+header.scrolled a{
+    color: white;
+}
+
+header.scrolled #logo{
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 160px;
+    height: 40px;
+}
+
+header.scrolled #nav_bar ul{
+    list-style: none;
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+}
+
+h1, h2{
+    font-family: 'roboto';
+    font-weight: 400;
+    margin: 0;
+}
+
+#nav_bar{
+    display: flex;
+    justify-content: center;
+    float: right;
+    
+}
+
+#p{
+    float: left;
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 300px;
+    height: 70px;
+    color: grey;
+    text-shadow: 0cap;
+    text-decoration: solid;
+    text-align: center;
+}
+
+#nav_bar ul{
+    list-style: none;
+    padding-top: 40px;
+    margin: 0;
+    display: flex;
+}
+
+#nav_bar a{
+    text-decoration: none;
+    color: white;
+    font-size: medium; 
+    font-weight: 900;
+    padding: 10px;
+}
+
+#nav_bar a:hover{
+    color: rgb(73, 165, 148);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#nav_bar li{
+    margin: 0 15px;
+}
+
+#nav_bar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+}
+
+#bar{
+    background-color: rgba(255, 255, 255, 0.379);
+    width: 100%;
+    padding: 70px;
+}
+
+/*------HOME------*/
+
+#home h1{
+    color: rgb(255, 255, 255);
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#home p{
+    font-size: 20px;
+}
+
+#home{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-image: url("bg.jpg");
+    background-size: 1500px 800px;
+    color: rgb(255, 255, 255);
+}
+
+/*------ABOUT------*/
+#about{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-color: rgb(219, 219, 219);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/*------HACKS------*/
+#skl{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-color: rgb(172, 178, 182);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(255, 255, 255);
+}
+
+/*------CONTACT------*/
+#contact{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    color: beige;
+    background-color: rgb(51, 52, 53);
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+#contact h1{
+    font-size: 30px;
+    color: beige;
+}
+
+#contact-us{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+#contact-us a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: beige;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+#contact a:hover{
+    color: rgb(208, 141, 195);
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
